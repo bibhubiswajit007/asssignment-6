@@ -4,19 +4,19 @@ int main(){
     int a,b;
     a=(sizeof(arr1)/4);
     b=(sizeof(arr2)/4);
-    int swas,count=0;
+    int bibhu,count=0;
     if (a>=b){
         
         for (int i=0;i<b;i++){
-            swas=0;
+            bibhu=0;
             for (int j=0;j<a;j++){
             if(arr2[i]==arr1[j]) {
-                swas=1;
+                bibhu=1;
                 count++;
                 break;
                 }
             }
-        if (swas==0) {
+        if (bibhu==0) {
             printf("arr2[] is not a subset of arr1[]");
             break;
         }
@@ -27,16 +27,16 @@ int main(){
     }
     if (a<b){
         for (int i=0;i<a;i++){
-            swas=0;
+            bibhu=0;
             for (int j=0;j<b;j++){
             if(arr1[i]==arr2[j]) {
-                swas=1;
+                bibhu=1;
                 count++;
                 break;
                 }
             }
 
-        if (swas==0) {printf("arr1[] is not a subset of arr2[]");
+        if (bibhu==0) {printf("arr1[] is not a subset of arr2[]");
         break;
         }
         }
